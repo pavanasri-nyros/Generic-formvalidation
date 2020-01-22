@@ -110,15 +110,15 @@ function text(b)
       if(type=="text")         
         {
           
-           var l=b.value.length;
-           if(l==0)
+           var len=b.value.length;
+           if(len==0)
             { 
               document.getElementById(show).innerHTML = "&#10008; minimum 2 chars"; 
              
               return false;
             }
             
-           else if(l>=minLength && l<=maxLength)
+           else if(len>=minLength && len<=maxLength)
             {
               document.getElementById(show).innerHTML = "";            
              
@@ -146,20 +146,20 @@ function text(b)
           if(type == "email")  
           {
             var match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            var l=e.value.length;
-            if(l==0)
+            var len=e.value.length;
+            if(len==0)
             { 
               document.getElementById(show).innerHTML = "Not Empty";  
               document.getElementById(show).style.color="balck";         
               return false;
             }
-            if(l>0 && match.test(e.value)==false)
+            if(len>0 && match.test(e.value)==false)
             {
               document.getElementById(show).innerHTML = " Enter a valid email address";   
               document.getElementById(show).style.color="red";         
               return false;
             }
-            if(l>0 && match.test(e.value)==true)
+            if(len>0 && match.test(e.value)==true)
             {
               document.getElementById(show).innerHTML = "";
               return true;
@@ -179,20 +179,20 @@ function text(b)
           {
             var regex =  /[7-9]\d{9}/;
           
-            var l=p.value.length;
-            if(l==0)
+            var len=p.value.length;
+            if(len==0)
             { 
               document.getElementById(show).innerHTML = "Not Empty";   
               document.getElementById(show).style.color="balck";         
               return false;
             }
-            if(l>0 && regex.test(p.value)==false)
+            if(len>0 && regex.test(p.value)==false)
             {
               document.getElementById(show).innerHTML = " Enter a valid number";  
               document.getElementById(show).style.color="red";         
               return false;
             }
-            if(l>0 && regex.test(p.value)==true)
+            if(len>0 && regex.test(p.value)==true)
             {
               document.getElementById(show).innerHTML = "";         
               return true;
@@ -295,7 +295,6 @@ function text(b)
                           if(rb>0 && rc==0)
                           {
                             x[i].focus();
-                            x[i].style.outline="1px solid red";
                             return false;
                            }
      
@@ -332,7 +331,6 @@ function text(b)
                      {
                           x[i].focus();
                           x[i].style.border="0px";
-                          x[i].style.outline="1px solid red";
                           return false;
                      } 
                      else if(x[i].value!="0"){
