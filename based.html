@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generic form</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    		<link rel="stylesheet" type="text/css" href="style.css"/>         
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <script src="based.js"></script>                                   
+    
+</head>
+     <div class="container-fluid">
+     	<img src="img/gogl.jpg" alt="" class = "backimage">
+     </div>
+
+   <div id="main">
+	
+	
+	<form name="myform" novalidate onSubmit="return validation(this)" method="post" >
+			<hr class="new5">
+
+
+			<h2 class="display-6 mt-5 ">Event registration</h2>
+                <div class="mt-4 mb-5 font">
+                    Event Timing:january 4th -6th,2016
+                    <br>
+                    Event Address:123 your street your city, ST 12345
+                    <br>
+                    contact us at(123) 456-877890 or
+                    <a href="#" style="text-decoration: underline;"> no-reply@example.com</a>
+                       
+	 
+				</div>
+   
+
+				<p class="text-danger font mb-4">* Required</p>
+
+
+
+              	<!-- text boxes-->
+              	<div class=form-group>
+              	   <label  class = "label-font">FirstName  </label>
+              	   <span class="text-danger">*</span> 
+              	   <input type="text"  name="firstname" id="firstname"/><br>
+                 </div><br>
+			  
+				 
+
+              <div class=form-group>
+              		<label  class = "label-font">LastName  </label>
+              		<span class="text-danger">*</span> 
+              		<input type="text"  name="lastname" id="lastname" /><br>
+              </div>
+              <br>
+			  
+			  
+              <div class=form-group>
+              		<label  class = "label-font">Email  </label>
+              		<span class="text-danger">*</span> 
+              	    <input type="email" class = " email ml-5"  name="email" id="email" autocomplete="email"/><br>
+              </div><br>
+              
+              
+              <div class=form-group>
+              		<label  class = "label-font">Phone</label>
+              		<span class="text-danger">*</span> 
+                 	<input type="tel" class = " ml-5"  name="number" id="phone" autocomplete="phone"/><br>
+              
+              </div><br>
+              
+              
+              		<div class="form-group">
+                              
+              				<p><label class = "label-font" >Dietary restrictions</label><br>
+              						<input type="radio" name = "diet" id="None" value = "d1">None <br>
+              						<input type="radio" name = "diet" id="Vegetarian" value = "d2">Vegetarian <br>
+              						<input type="radio" name = "diet" id="Vegan" value = "d3">Vegan <br>
+              						<input type="radio" name = "diet" id="Kosher" value = "d4">Kosher <br>
+              						<input type="radio" name = "diet" id="Gluten-free" value = "d5">Gluten-free <br>
+              			
+              			    </p>
+              			
+              		</div>
+              
+              
+              	<!--check boxes-->
+              
+              
+              	<p><label class = "label-font" >Which days do you attend ?</label><br>
+              		<li><input type="checkbox" name="day" id="day"   value="Day1"><span>Day1</span></li>
+              	<li><input type="checkbox" name="day" id="day1" value="Day2"><span>Day2</span></li>
+              	
+              	
+              	
+              	<!--Select box-->
+              
+              
+              	<p><label class = "label-font" >City</label><br>
+              		
+              			
+              				<select  name="country" id="country">
+              				<option value="0">SELECT-City</option>
+              				<option value="1">Kakinada</option>
+              				<option value="2">OTHERS</option>
+              				<option></option>
+              				
+						    </select><br><br>
+				</p>
+              	
+              	
+              	<input type="submit" name="submit" id="submit" value="Submit" />
+              	
+              	</form>
+              </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

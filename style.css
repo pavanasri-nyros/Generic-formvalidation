@@ -1,0 +1,93 @@
+#main{
+	position:absolute;
+    top: -15vh;
+    background: #fff;
+    padding:30px;
+    left: 27%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+    margin-top: 300px;
+  width: 600px;
+}
+body{
+	background:#F2F2F2;
+}
+
+h1 {
+	margin-left: 230px;
+	padding-top:20px;
+	margin-bottom:30px;
+	text-decoration: underline;
+	color: red;
+}
+
+
+.backimage{
+    width: 100%;
+    height: 290px;
+}
+
+hr.new5 {
+    border: 5px solid brown;
+    margin-top: -30px;
+    width:590px;
+    margin-right: 20px;
+    margin-left: -30px;
+   
+  }
+
+  .font{
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label-font{
+    font-size: 20px;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+
+}
+
+form li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+form ul li label{
+	float: left;
+	clear: left;
+	width: 200px;
+	text-align: right;
+	margin-right: 10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+form ul li input, select,span {
+	float: left;
+	margin-bottom: 10px;
+}
+
+[type="submit"] {
+	clear: left;
+	margin: 20px 0 0 230px;
+	font-size:18px
+}
+
+input{
+	height: 25px
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+select:focus { 
+    outline: none !important;
+    border-color: red;
+    box-shadow: 0 0 10px #719ECE;
+}
+ul{
+	display: inline;
+}
