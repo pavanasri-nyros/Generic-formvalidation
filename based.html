@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Generic form</title>
+        <title>Generic form validation</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    		<link rel="stylesheet" type="text/css" href="style.css"/>         
 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-      <script src="based.js"></script>                                   
+		<!--links-->
+    	<link rel="stylesheet" type="text/css" href="style.css"/>         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="based.js"></script>                                   
     
 </head>
+
+    <!--Displaying the image-->
      <div class="container-fluid">
      	<img src="img/gogl.jpg" alt="" class = "backimage">
      </div>
 
+
+
    <div id="main">
 	
 	
-	<form name="myform" novalidate onSubmit="return validation(this)" method="post" >
-			<hr class="new5">
-
-
-			<h2 class="display-6 mt-5 ">Event registration</h2>
+	 <form name="myform" novalidate onSubmit="return validation(this)" method="post" >
+		   <hr class="new5">
+            <h2 class="display-6 mt-5 ">Event registration</h2>
                 <div class="mt-4 mb-5 font">
                     Event Timing:january 4th -6th,2016
                     <br>
@@ -31,16 +33,12 @@
                     <br>
                     contact us at(123) 456-877890 or
                     <a href="#" style="text-decoration: underline;"> no-reply@example.com</a>
-                       
-	 
 				</div>
-   
-
 				<p class="text-danger font mb-4">* Required</p>
 
 
 
-              	<!-- text boxes-->
+              	<!-- text box-->
               	<div class=form-group>
               	   <label  class = "label-font">FirstName  </label>
               	   <span class="text-danger">*</span> 
@@ -48,73 +46,66 @@
                  </div><br>
 			  
 				 
-
-              <div class=form-group>
-              		<label  class = "label-font">LastName  </label>
-              		<span class="text-danger">*</span> 
-              		<input type="text"  name="lastname" id="lastname" /><br>
-              </div>
-              <br>
+                <!--text box-->
+                <div class=form-group>
+                	<label  class = "label-font">LastName  </label>
+                	<span class="text-danger">*</span> 
+                	<input type="text"  name="lastname" id="lastname" /><br>
+                </div><br>
 			  
+			    <!--email -->
+                <div class=form-group>
+                	<label  class = "label-font">Email  </label>
+                	<span class="text-danger">*</span> 
+                	<input type="email" class = " email ml-5"  name="email" id="email" autocomplete="email"/><br>
+                </div><br>
+              
 			  
-              <div class=form-group>
-              		<label  class = "label-font">Email  </label>
-              		<span class="text-danger">*</span> 
-              	    <input type="email" class = " email ml-5"  name="email" id="email" autocomplete="email"/><br>
-              </div><br>
+			   <!--Phone number-->
+                 <div class=form-group>
+                 	<label  class = "label-font">Phone</label>
+                 	<span class="text-danger">*</span> 
+                    <input type="tel" class = "ml-5"  name="number" id="phone" autocomplete="phone"/><br>
+                 
+                 </div><br>
               
-              
-              <div class=form-group>
-              		<label  class = "label-font">Phone</label>
-              		<span class="text-danger">*</span> 
-                 	<input type="tel" class = " ml-5"  name="number" id="phone" autocomplete="phone"/><br>
-              
-              </div><br>
-              
-              
-              		<div class="form-group">
-                              
-              				<p><label class = "label-font" >Dietary restrictions</label><br>
-              						<input type="radio" name = "diet" id="None" value = "d1">None <br>
-              						<input type="radio" name = "diet" id="Vegetarian" value = "d2">Vegetarian <br>
-              						<input type="radio" name = "diet" id="Vegan" value = "d3">Vegan <br>
-              						<input type="radio" name = "diet" id="Kosher" value = "d4">Kosher <br>
-              						<input type="radio" name = "diet" id="Gluten-free" value = "d5">Gluten-free <br>
-              			
-              			    </p>
-              			
-              		</div>
+              <!--radio buttons-->
+              	<div class="form-group">
+                    <p><label class = "label-font" >Dietary restrictions</label><br>
+              			<input type="radio" name = "diet" id="None" value = "d1">None <br>
+              			<input type="radio" name = "diet" id="Vegetarian" value = "d2">Vegetarian <br>
+              			<input type="radio" name = "diet" id="Vegan" value = "d3">Vegan <br>
+              			<input type="radio" name = "diet" id="Kosher" value = "d4">Kosher <br>
+              			<input type="radio" name = "diet" id="Gluten-free" value = "d5">Gluten-free <br>
+              		</p>
+              	</div>
               
               
               	<!--check boxes-->
-              
-              
-              	<p><label class = "label-font" >Which days do you attend ?</label><br>
-              		<li><input type="checkbox" name="day" id="day"   value="Day1"><span>Day1</span></li>
-              	<li><input type="checkbox" name="day" id="day1" value="Day2"><span>Day2</span></li>
-              	
+				  <p><label class = "label-font" >Which days do you attend ?</label><br>
+					<li><input type="checkbox" name="day" id="day"   value="Day1"><span>Day1</span></li>
+					<li><input type="checkbox" name="day" id="day1" value="Day2"><span>Day2</span></li>
+				 </p>
               	
               	
               	<!--Select box-->
-              
-              
               	<p><label class = "label-font" >City</label><br>
-              		
-              			
-              				<select  name="country" id="country">
-              				<option value="0">SELECT-City</option>
-              				<option value="1">Kakinada</option>
-              				<option value="2">OTHERS</option>
-              				<option></option>
-              				
-						    </select><br><br>
+              		<select  name="country" id="country">
+              		      <option value="0">SELECT-City</option>
+              		      <option value="1">Kakinada</option>
+              		      <option value="2">OTHERS</option>
+              		      <option></option>
+              		</select><br><br>
 				</p>
               	
+				  
+				<!--button-->
+              	<input type="submit"  name="submit" id="submit" value="Submit" />
               	
-              	<input type="submit" name="submit" id="submit" value="Submit" />
-              	
-              	</form>
-              </div>
+	</form>
+  </div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
