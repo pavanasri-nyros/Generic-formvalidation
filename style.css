@@ -1,3 +1,5 @@
+
+/*styles for the form to display like box shadow */
 #main{
 	position:absolute;
     top: -15vh;
@@ -9,10 +11,14 @@
     margin-top: 300px;
   width: 600px;
 }
+
+/*background color */
 body{
 	background:#F2F2F2;
 }
 
+
+/*for the h1 tag styles*/
 h1 {
 	margin-left: 230px;
 	padding-top:20px;
@@ -21,12 +27,13 @@ h1 {
 	color: red;
 }
 
-
+/*Setting the background image*/
 .backimage{
     width: 100%;
     height: 290px;
 }
 
+/*for the horizontal line*/
 hr.new5 {
     border: 5px solid brown;
     margin-top: -30px;
@@ -36,10 +43,14 @@ hr.new5 {
    
   }
 
+
+  /*font styles for the main matter*/
   .font{
     font-size:14px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*font styles for the label*/
 
 .label-font{
     font-size: 20px;
@@ -47,20 +58,14 @@ hr.new5 {
 
 }
 
+
+/*margin style for the li tag in the form*/
 form li {
 	list-style: none;
 	margin-bottom: 5px;
 }
 
-form ul li label{
-	float: left;
-	clear: left;
-	width: 200px;
-	text-align: right;
-	margin-right: 10px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:14px;
-}
+
 
 form ul li input, select,span {
 	float: left;
@@ -71,6 +76,25 @@ form ul li input, select,span {
 	clear: left;
 	margin: 20px 0 0 230px;
 	font-size:18px
+}
+
+input{
+	height: 25px
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+select:focus { 
+    outline: none !important;
+    border-color: red;
+    box-shadow: 0 0 10px #719ECE;
+}
+ul{
+	display: inline;
 }
 
 input{
